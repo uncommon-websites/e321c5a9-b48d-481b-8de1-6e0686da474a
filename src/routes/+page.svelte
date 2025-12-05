@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Investor-grade market intelligence in days, not weeks"
+	subtitle="AI-moderated expert interviews deliver 80% of the insight at 5% of the cost. Trusted by leading private equity firms for pre-LOI diligence and portfolio company work."
+	customers={[
+		{
+			name: "Michael Chen",
+			position: "Principal, Blackstone",
+			imageSrc: "/generated/image-confident-professional-man-in-a-tailored.webp"
+		},
+		{
+			name: "Sarah Patterson",
+			position: "Partner, KKR",
+			imageSrc: "/generated/image-professional-woman-executive-in-business.webp"
+		},
+		{
+			name: "David Morrison",
+			position: "Managing Director, Bain Capital",
+			imageSrc: "/generated/image-professional-man-in-finance-wearing-a-su.webp"
+		},
+		{
+			name: "Jennifer Rodriguez",
+			position: "Vice President, Apollo",
+			imageSrc: "/generated/image-confident-professional-woman-investment-.webp"
+		},
+		{
+			name: "Robert Thompson",
+			position: "Director, Carlyle Group",
+			imageSrc: "/generated/image-professional-man-private-equity-executiv.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/blackstone.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/bcg.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/bain.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/kkr.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
