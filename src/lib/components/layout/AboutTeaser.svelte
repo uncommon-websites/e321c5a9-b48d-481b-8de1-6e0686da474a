@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Frederik Kofoed Hansen",
+		role: "Co-Founder & CEO",
+		image: "/generated/image-a-professional-male-executive-standing-c.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After leading commercial due diligence at Blackstone for six years, I watched PE firms pay millions and wait weeks for market insights they needed in days. We built DiligenceSquared to change that, delivering investor-grade intelligence at unprecedented speed through AI-moderated expert interviews. The transformation has been remarkable, our clients now get 80% of the insight at 5% of the cost."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
